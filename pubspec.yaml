@@ -29,4 +29,4 @@ flutter:
     - assets/images/background.jpeg
     - assets/player1.jpeg
     - assets/player2.jpeg
-    - assets/audio/punch.mp3
+    - assets/audio/correct.mp3
