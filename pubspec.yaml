@@ -26,7 +26,4 @@ flutter:
   uses-material-design: true
 
   assets:
-    - assets/images/background.jpeg
-    - assets/player1.jpeg
-    - assets/player2.jpeg
-    - assets/audio/correct.mp3
+    

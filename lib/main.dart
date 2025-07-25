@@ -1,6 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_tts/flutter_tts.dart';
 import 'package:audioplayers/audioplayers.dart';
+import 'dart:io' show Platform;
+import 'package:flutter/foundation.dart' show kIsWeb;
+
 
 void main() => runApp(ShapeLearningApp());
 
@@ -24,6 +27,7 @@ class _ShapeScreenState extends State<ShapeScreen> {
   final FlutterTts flutterTts = FlutterTts();
 
   void _speak(String text) async {
+    if (kIsWeb) return; // Disable TTS on web
     await flutterTts.speak(text);
   }
   final AudioPlayer _audioPlayer = AudioPlayer();
@@ -145,6 +149,7 @@ class ShapeScreen2 extends StatelessWidget {
   final FlutterTts flutterTts = FlutterTts();
 
   void _speak(String text) async {
+    if (kIsWeb) return; // Disable TTS on web
     await flutterTts.speak(text);
   }
 
