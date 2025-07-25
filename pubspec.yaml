@@ -1,0 +1,32 @@
+name: my_app
+description: "A new Flutter project."
+version: 1.0.0+1
+environment:
+  sdk: ^3.8.1
+
+dependencies:
+  flutter:
+    sdk: flutter
+  cupertino_icons: ^1.0.8
+  audioplayers: ^6.5.0          # For sound feedback
+  flutter_svg: ^2.0.7           # For vector images
+  provider: ^6.1.0              # State management
+  google_fonts: ^6.1.0          # Nice kid-friendly fonts
+  lottie: ^3.1.0                # Animations
+  shared_preferences: ^2.2.2    # Save progress
+  flutter_tts: ^3.8.5
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^5.0.0
+
+flutter:
+
+  uses-material-design: true
+
+  assets:
+    - assets/images/background.jpeg
+    - assets/player1.jpeg
+    - assets/player2.jpeg
+    - assets/audio/punch.mp3
